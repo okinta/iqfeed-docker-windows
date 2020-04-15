@@ -12,4 +12,5 @@ RUN powershell -Command \
 EXPOSE 5009 9100 9200 9300 9400
 
 COPY entrypoint.ps1 entrypoint.ps1
-ENTRYPOINT ["powershell", "-Command", "$ErrorActionPreference = 'Stop';", ".\\entrypoint.ps1", ";"]
+ENTRYPOINT powershell -Command $ErrorActionPreference = 'Stop'; .\entrypoint.ps1 &&
+CMD cmd /C .\iqfeedconnect.lnk
