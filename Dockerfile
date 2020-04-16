@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
+FROM mcr.microsoft.com/windows:1909
 
 RUN powershell -Command \
     $ErrorActionPreference = 'Stop'; \
