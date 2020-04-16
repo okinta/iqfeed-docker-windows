@@ -4,7 +4,7 @@ This runs IQFeed client as a Windows container.
 
 ## Building
 
-    docker build -f .\Dockerfile -t iqfeed-docker-windows .
+    docker build -t iqfeed-docker-windows .
 
 ## Running
 
