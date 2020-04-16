@@ -24,5 +24,5 @@ RUN powershell -Command \
 
 EXPOSE 5009 9100 9200 9300 9400
 
-COPY startiqfeed.ps1 startiqfeed .ps1
+COPY startiqfeed.ps1 startiqfeed.ps1
 CMD powershell .\startiqfeed.ps1
